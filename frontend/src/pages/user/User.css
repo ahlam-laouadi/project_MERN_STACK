@@ -1,0 +1,22 @@
+.user-page .user-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-page .user-container section {
+  display: flex;
+  width: max-content;
+}
+
+@media (max-width: 800px) {
+  .user-page .user-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-page .user-container section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}

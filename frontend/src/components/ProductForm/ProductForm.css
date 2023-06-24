@@ -1,0 +1,114 @@
+.productFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.productFormContainer form .create {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.productFormContainer form {
+  display: flex;
+  flex-direction: column;
+  height: 0rem;
+  overflow: hidden;
+  width: max-content;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.5s ease-in;
+}
+
+.productFormContainer form.active {
+  height: 40rem;
+}
+
+.productFormContainer form section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.productFormContainer form .field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  text-align: center;
+}
+
+.productFormContainer form label {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--onyx);
+}
+
+.productFormContainer form .input {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--spanish-gray);
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  outline: none;
+}
+
+.productFormContainer form .input:focus {
+  border: 2px solid var(--salmon-pink);
+}
+
+.productFormContainer form .input::placeholder {
+  color: var(--spanish-gray);
+}
+
+.productFormContainer form .input-error {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid red;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  outline: none;
+}
+
+.productFormContainer form .field p {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 1rem;
+  width: 100%;
+  text-align: left;
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.productFormContainer form .dropzone {
+  background-color: var(--salmon-pink);
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s ease-in;
+}
+
+.productFormContainer form .dropzone:hover {
+  transform: scale(1.1);
+  background-color: var(--onyx);
+}
+
+.productFormContainer form button {
+  margin-bottom: 1rem;
+}

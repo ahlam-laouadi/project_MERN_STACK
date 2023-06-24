@@ -1,0 +1,149 @@
+.authContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 1rem 0;
+}
+
+.authContainer form {
+  padding: 2rem 2rem;
+  width: 35rem;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.authContainer form label {
+  font-size: 1.2rem;
+  color: var(--salmon-pink);
+  margin-bottom: 1rem;
+}
+
+.authContainer form .input {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: black;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.3);
+  border: none;
+  backdrop-filter: blur(12px);
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.authContainer form .input:focus {
+  border: 2px solid var(--salmon-pink);
+}
+
+.authContainer form .input::placeholder {
+  color: var(--onyx);
+}
+
+.authContainer form .input-error {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid red;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  outline: none;
+}
+
+.authContainer form p {
+  width: 100%;
+  text-align: left;
+  color: red;
+  font-size: 1.1rem;
+}
+
+.authContainer form h2 {
+  width: max-content;
+  align-self: flex-end;
+  padding: 0.5rem;
+  text-align: right;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: var(--onyx);
+  cursor: pointer;
+  transition: var(--transition-timing);
+}
+
+.authContainer form h2:hover {
+  color: var(--salmon-pink);
+}
+
+@media (max-width: 500px) {
+  .authContainer form .input::placeholder {
+    text-align: center;
+  }
+
+  .authContainer form h2 {
+    text-align: center;
+  }
+}
+
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////// */
+
+/* sign up form */
+.authContainer form .name,
+.authContainer form .info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.authContainer form .name section,
+.authContainer form .info section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authContainer form .dropzone {
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+
+.authContainer form .dropzone .icon {
+  font-size: 1.5rem;
+  color: var(--onyx);
+  transition: 0.4s ease-in;
+}
+
+.authContainer form .dropzone:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.authContainer form .dropzone:hover .icon {
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .authContainer form {
+    padding: 2rem 2rem;
+    width: 80%;
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.6);
+  }
+}

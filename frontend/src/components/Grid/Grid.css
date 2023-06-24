@@ -1,0 +1,43 @@
+.product-main {
+  margin-bottom: 30px;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-main .product-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 0rem;
+  gap: 1rem;
+}
+
+.product-main .product-grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-main .product-grid del {
+  color: var(--sonic-silver);
+}
+
+@media (max-width: 1000px) {
+  .product-main .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .product-main .product-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-main .product-grid {
+    grid-template-columns: auto;
+  }
+}

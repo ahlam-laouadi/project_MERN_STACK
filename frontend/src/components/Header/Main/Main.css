@@ -1,0 +1,142 @@
+.headerMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid var(--cultured);
+  gap: 2rem;
+  padding: 1rem 6rem;
+}
+
+.headerMain .searchContainer {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+}
+
+.headerMain .searchContainer .searchField {
+  font-size: 1rem;
+  color: var(--onyx);
+  padding: 1rem;
+  border: none;
+  width: 95%;
+  height: 3rem;
+}
+
+.headerMain .searchContainer .searchField:focus {
+  outline: none;
+}
+
+.headerMain .searchContainer .searchBtn {
+  background: var(--white);
+  color: var(--onyx);
+  font-size: 18px;
+  border-left: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  transition: color var(--transition-timing);
+  width: 3rem;
+}
+
+.headerMain .searchContainer .searchBtn:hover {
+  color: var(--salmon-pink);
+}
+
+.headerMain .mainActions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 10rem;
+}
+
+.headerMain .mainActions .action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.headerMain .mainActions .action img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.1rem solid var(--salmon-pink);
+}
+
+.headerMain .mainActions .action {
+  position: relative;
+}
+
+.headerMain .mainActions .action button {
+  position: relative;
+  font-size: 35px;
+  color: var(--onyx);
+  transition: color var(--transition-timing);
+}
+
+.headerMain .mainActions .action:hover button {
+  color: var(--salmon-pink);
+}
+
+.headerMain .mainActions .action h3 {
+  position: absolute;
+  top: 0;
+  left: 0.7rem;
+  color: red;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px white;
+  cursor: pointer;
+}
+
+.headerMain .mainActions .messages {
+  position: absolute;
+  top: 9rem;
+  right: 2rem;
+  z-index: 5;
+  backdrop-filter: blur(6px);
+}
+
+.headerMain .mainActions .messages .message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15rem;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--spanish-gray);
+  transition: var(--transition-timing);
+}
+
+.headerMain .mainActions .messages .message:hover {
+  margin: 1rem 0rem;
+  border: 1px solid var(--salmon-pink);
+}
+
+.headerMain .mainActions .messages .message img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.headerMain .mainActions .messages .message h1 {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .headerMain {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+
+  .headerMain .searchContainer {
+    width: 100%;
+  }
+
+  .headerMain .mainActions .messages {
+    top: 15rem;
+    right: auto;
+  }
+}

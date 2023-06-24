@@ -1,0 +1,101 @@
+.commentsPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 90%;
+}
+
+.commentsPanel button {
+  margin-bottom: 4rem;
+}
+
+.commentsPanel .commentsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  height: 0rem;
+  overflow: scroll;
+  transition: 0.5s ease-in;
+}
+
+.commentsPanel .commentsContainer::-webkit-scrollbar {
+  width: 1px;
+}
+
+.commentsPanel .commentsContainer.active {
+  height: 35rem;
+}
+
+.commentsPanel .commentsContainer .comment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0rem;
+  padding: 1rem 0;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.commentsPanel .commentsContainer .comment img {
+  width: 6rem;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.commentsPanel .commentsContainer .comment .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+}
+
+.commentsPanel .commentsContainer .comment .info .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--onyx);
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+
+.commentsPanel .commentsContainer .comment .info .top .icon {
+  transition: 0.4s ease-in;
+  font-size: 1.4rem;
+}
+
+.commentsPanel .commentsContainer .comment .info .top .icon:hover {
+  color: var(--salmon-pink);
+  transform: scale(1.4);
+}
+
+.commentsPanel .commentsContainer .comment .info p {
+  color: var(--onyx);
+  font-size: 1rem;
+  width: 100%;
+}
+
+.commentsPanel .commentsContainer .comment .info .date {
+  width: max-content;
+  background-color: var(--salmon-pink);
+
+  padding: 0.3rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.commentsPanel .commentsContainer .noComments {
+  font-size: 1.2rem;
+  background-color: var(--salmon-pink);
+  color: white;
+  padding: 1rem;
+  width: max-content;
+  border-radius: 20px;
+  align-self: center;
+  cursor: default;
+}

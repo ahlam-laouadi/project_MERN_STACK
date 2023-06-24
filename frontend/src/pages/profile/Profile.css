@@ -1,0 +1,29 @@
+.profile .profileContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile .profileContainer section {
+  display: flex;
+  width: max-content;
+}
+
+.profile .profileContainer .grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .profile .profileContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile .profileContainer section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
